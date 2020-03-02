@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>压缩</title>
+    <style>
+        html,body{height: 100%;width: 100%;margin:0;padding:0; background-color: #E0EDF3}
+
+        ul{
+            /* 清除列表样式小点 */
+            list-style: none;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            width: 100%;
+            height: 400px;
+            /*background:#E0EDF3;*/
+            background:url("20181114.jpg") no-repeat;
+            overflow: hidden;
+        }
+        .upload{
+            height: 200px;
+            width: 400px;
+            text-align: center;
+            margin: 50px auto 0;
+            color: #ffffff;
+            border: .2rem dashed #616778;
+            border-radius:1.6rem;
+            position: relative;
+        }
+        .upload .txt{
+            width: 100%;
+            position: absolute;
+            bottom: 30px;
+        }
+
+
+        .res_list{
+            width: 80%;
+            border-collapse: collapse;
+            margin: 10px auto 0;
+            background: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 1px solid #BBCBD0;
+
+        }
+
+        .res_list dd{
+            background: #F0F0F0;
+            height: 30px;
+            line-height: 30px;
+            margin-bottom: 5px;
+            border:1px solid #BBCBD0;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        .res_list ul{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .res_list li{
+            float: left;
+
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="upload">
+        <div class="txt">
+            <h3>将您的.png或.jpg文件放到这里！</h3>
+            <p>最多20张图像，每张最大5 MB。</p>
+        </div>
+    </div>
+</header>
+
+
+<dl class="res_list">
+    <dd>
+
+        <ul>
+            <li>test.png</li>
+            <li>10.1 KB</li>
+            <li>10.1 KB</li>
+            <li>0%</li>
+        </ul>
+
+    </dd>
+    <dd>
+
+        <ul>
+            <li>595064.jpg</li>
+            <li>658.1 KB</li>
+            <li>359.8 KB</li>
+            <li>-45%</li>
+        </ul>
+
+
+    </dd>
+</dl>
+
+
+</body>
+</html>
